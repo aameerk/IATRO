@@ -11,7 +11,7 @@ client = Client("AC29088dc1efc7599a6bf9b5e99bee4089", "2c57061b034fa22f851250c6c
 message = "Emergency! Please help! My location is: "
 
 # define emergency contacts
-contacts = {"Dharcha": "+919025740216", "Shiva": "+917010480901"}
+contacts = {"Dharcha": "+919876543210", "Shiva": "+911234567890"}
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
