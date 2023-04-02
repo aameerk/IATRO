@@ -5,7 +5,7 @@ import geocoder
 app = Flask(__name__)
 
 # initialize Twilio client with your account SID and auth token
-client = Client("ACf23d3a0c0e95b07c82f43964dc9f0965", "b2cd229ed473284df9352000790d5be5")
+client = Client("AC29088dc1efc7599a6bf9b5e99bee4089", "2c57061b034fa22f851250c6caf1abb9")
 
 # define message to be sent
 message = "Emergency! Please help! My location is: "
@@ -30,7 +30,7 @@ def home():
         for name, number in contacts.items():
             client.messages.create(
                 to=number, 
-                from_="+15855221700", 
+                from_="+15855221257", 
                 body="Emergency alert from " + name + "! " + message_with_location
             )
 
